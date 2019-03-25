@@ -1,5 +1,6 @@
 
 @import "reset";
+@import "_fonts";
 $padding_standart: 10px;
 $main_heading_size: 96px;
 
@@ -65,11 +66,13 @@ nav {
   h1 {
     font-size: $main_heading_size;
     @include heading_styles;
+    font-weight: 300;
   }
   p {
     max-width: 330px;
     margin: 10% 0 5% 0;
     line-height: 23px;
+    font-family: 'SF Pro Text', sans-serif;
   }
   .main-button {
     @include main_button_red;
