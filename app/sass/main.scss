@@ -1,0 +1,99 @@
+
+@import "reset";
+$padding_standart: 10px;
+$main_heading_size: 96px;
+
+$p_standart_color: white;
+$red_main: #BE0606;
+
+@mixin giganter_heading {
+  font-weight: 800;
+  font-size: 180px;
+  line-height: 258px;
+  text-transform: uppercase;
+  color: white;
+}
+
+@mixin heading_styles {
+  font-family: 'SF UI Display', sans-serif;
+  color: white;
+
+}
+
+@mixin main_button_red {
+  display: inline-block;
+  color: white;
+  background: $red_main;
+  padding: 5% 10%;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #080808;
+}
+p {
+  color: $p_standart_color;
+  font-size: 18px;
+}
+.rotated {
+  transform: rotate(90deg);
+}
+
+.head-fluid {
+  height: 100vh;
+  background: linear-gradient(181.01deg, rgba(65, 65, 65, 0) -28.08%, rgba(21, 21, 21, 0) 35.92%, #080808 83.3%), url("../img/bg-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: $padding_standart + 5 0 0 0;
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+}
+
+.about-left-content {
+  h1 {
+    font-size: $main_heading_size;
+    @include heading_styles;
+  }
+  p {
+    max-width: 330px;
+    margin: 10% 0 5% 0;
+    line-height: 23px;
+  }
+  .main-button {
+    @include main_button_red;
+    padding: 15% 30%;
+  }
+}
+.about-right-content {
+  margin: 0 0 40vh 10vh;
+  h1 {
+    @include giganter_heading;
+  }
+
+}
+.crooked-content {
+  display: flex;
+  position: relative;
+  height: 50vh;
+  align-items: center;
+  .giganter-image {
+    height: 60vh;
+    position: absolute;
+    width: 60%;
+    background: url("../img/about-1.jpg");
+    background-repeat: no-repeat;
+
+  }
+}
