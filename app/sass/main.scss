@@ -1,6 +1,7 @@
 
 @import "reset";
-@import "_fonts";
+@import "fonts";
+@import "about";
 $padding_standart: 10px;
 $main_heading_size: 96px;
 
@@ -37,9 +38,6 @@ body {
 p {
   color: $p_standart_color;
   font-size: 18px;
-}
-.rotated {
-  transform: rotate(90deg);
 }
 
 .head-fluid {

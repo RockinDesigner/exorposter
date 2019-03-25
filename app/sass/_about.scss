@@ -1,0 +1,59 @@
+.about-fluid {
+	display: flex;
+	padding: 80px 0;
+	.about-content {
+		width: 800px;
+		position: relative;
+		&-description {
+			width: 600px;
+			color: #fff;
+			font-family: 'SF Pro Text', serif;
+			font-size: 36px;
+			line-height: 52px;
+			z-index: 1;
+		}
+
+		img { width: 100%; }
+
+		&-number {
+			font-family: 'SF Pro Text', serif;
+			font-size: 220px;
+			color: rgba(190, 6, 6, 0.5);
+			z-index: -1;
+		}
+	}
+}
+
+.first-step {
+	justify-content: flex-start;
+	.about-content .about-content-description {
+		position: absolute;
+		left: 580px;
+		top: 130px;
+	}
+	.about-content .about-content-number {
+		position: absolute;
+		bottom: -105px;
+		right: -167px;
+	}
+}
+
+.last-step {
+	justify-content: flex-end;
+	.about-content .about-content-description {
+		position: absolute;
+		right: 440px;
+		top: 130px;
+	}
+	.about-content .about-content-number {
+		position: absolute;
+		bottom: -105px;
+		left: -167px;
+	}
+}
+
+.description {
+	font-size: 16px;
+	color: #fff;
+	margin: 40px 0;
+}
