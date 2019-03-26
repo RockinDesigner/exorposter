@@ -6,6 +6,25 @@ $main_line_height: 23px;
 $p_standart_color: white;
 $red_main: #BE0606;
 
+@mixin heading_styles {
+  font-family: 'SF UI Display', sans-serif;
+  font-weight: 800;
+  color: white;
+
+}
+
+@mixin main_button_red {
+  font-family: 'SF Pro Text', sans-serif;
+  display: inline-block;
+  line-height: $main_line_height;
+  color: white;
+  background: $red_main;
+  padding: 2% 8%;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+}
 body {
   background-color: #080808;
 
@@ -18,4 +37,8 @@ h2 {
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 800;
   font-size: $second_heading_size;
+}
+
+a {
+  text-decoration: none;
 }

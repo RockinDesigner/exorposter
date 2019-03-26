@@ -3,29 +3,13 @@
 @import "custom-variables";
 @import "glitch";
 @import "fonts";
+
+@import "fullpage";
 @import "about";
 @import "word";
 
 
-@mixin heading_styles {
-  font-family: 'SF UI Display', sans-serif;
-  font-weight: 800;
-  color: white;
 
-}
-
-@mixin main_button_red {
-  font-family: 'SF Pro Text', sans-serif;
-  display: inline-block;
-  line-height: $main_line_height;
-  color: white;
-  background: $red_main;
-  padding: 2% 8%;
-  font-size: 17px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 5px;
-}
 .head-background {
   position: absolute;
   top: 0;
@@ -74,7 +58,7 @@
 }
 nav {
   position: fixed;
-  z-index: 999;
+  z-index: 1000;
   right: 1%;
   padding: $padding_standart + 5 0 0 0;
   button {
