@@ -1,13 +1,14 @@
 .about-fluid {
 	display: flex;
-	padding: 80px 0;
+	margin: 28vh 0 0 0;
+	padding: 0 0 20vh 0;
 	.about-content {
-		width: 800px;
+		width: 50vw;
 		position: relative;
 		&-description {
 			width: 600px;
 			color: #fff;
-			font-family: 'SF Pro Text', serif;
+			font-family: 'SF Pro Text', sans-serif;
 			font-size: 36px;
 			line-height: 52px;
 			z-index: 1;
@@ -28,8 +29,8 @@
 	justify-content: flex-start;
 	.about-content .about-content-description {
 		position: absolute;
-		left: 580px;
-		top: 130px;
+		left: 75%;
+		top: 26%;
 	}
 	.about-content .about-content-number {
 		position: absolute;
@@ -38,12 +39,18 @@
 	}
 }
 
+.about-content-number {
+	font-family: 'SF Pro Text', sans-serif;
+	font-weight: 800;
+	letter-spacing: -0.1em;
+}
+
 .last-step {
 	justify-content: flex-end;
 	.about-content .about-content-description {
 		position: absolute;
-		right: 440px;
-		top: 130px;
+		right: 60%;
+		top: 26%;
 	}
 	.about-content .about-content-number {
 		position: absolute;
@@ -52,8 +59,4 @@
 	}
 }
 
-.description {
-	font-size: 16px;
-	color: #fff;
-	margin: 40px 0;
-}
+

@@ -1,0 +1,45 @@
+@import "custom-variables";
+
+.word-content-fluid {
+	margin: 34vh 0 0 0;
+
+	.word-content {
+		.word-content-title h2 {
+			color: white;
+			max-width: 600px;
+			margin: 0 auto;
+			margin-bottom: 120px;
+			font-family: SF Pro Text, serif;
+			font-size: $second_heading_size + 12;
+			line-height: $main_line_height * 2 + 11;
+		}
+
+
+		.description {
+			font-family: SF Pro Text, serif;
+			font-weight: 300;
+			width: 320px;
+			margin: 0 auto;
+			line-height: $main_line_height;
+		}
+	}
+
+	.word-img {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.line-animate {
+			background: #BE0606;
+			width: 6px;
+			height: 240px;
+			margin-left: 66px;
+			margin-top: 90px;
+		}
+	}
+
+	.left-img {
+		display: flex;
+		justify-content: center;
+		margin-top: 510px;
+	}
+}

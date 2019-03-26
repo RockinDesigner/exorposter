@@ -1,0 +1,21 @@
+$padding_standart: 10px;
+$main_heading_size: 72px;
+$second_heading_size: 36px;
+
+$main_line_height: 23px;
+$p_standart_color: white;
+$red_main: #BE0606;
+
+body {
+  background-color: #080808;
+
+}
+main {
+  position: relative;
+  overflow: hidden;
+}
+h2 {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 800;
+  font-size: $second_heading_size;
+}
