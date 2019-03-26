@@ -416,7 +416,9 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(12.84%, #080808), color-stop(64.87%, rgba(8, 8, 8, 0)), color-stop(110.94%, #080808)), url(../img/10.jpg);
   background: -webkit-linear-gradient(top, #080808 12.84%, rgba(8, 8, 8, 0) 64.87%, #080808 110.94%), url(../img/10.jpg);
   background: -o-linear-gradient(top, #080808 12.84%, rgba(8, 8, 8, 0) 64.87%, #080808 110.94%), url(../img/10.jpg);
-  background: linear-gradient(180deg, #080808 12.84%, rgba(8, 8, 8, 0) 64.87%, #080808 110.94%), url(../img/10.jpg); }
+  background: linear-gradient(180deg, #080808 12.84%, rgba(8, 8, 8, 0) 64.87%, #080808 110.94%), url(../img/10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;}
   .footer-background h1 {
     font-family: 'SF UI Display', sans-serif;
     font-weight: 800;
